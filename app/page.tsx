@@ -190,7 +190,8 @@ function Modal({
           overflow: "hidden",
         }}
       >
-        <div style={{ padding: 16, display: "flex", justifyContent: "space-between", gap: 12 }}>
+        <div style={{ padding: 16, display: "flex",
+flexDirection: "column",, justifyContent: "space-between", gap: 12 }}>
           <div>
             <div style={{ fontSize: 16, fontWeight: 950, color: "white" }}>{title}</div>
             <div style={{ fontSize: 12, color: "rgba(255,255,255,0.72)", marginTop: 4 }}>
@@ -221,7 +222,8 @@ function Modal({
 
 function SoftDivider({ label }: { label: string }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "18px 0 10px" }}>
+    <div style={{ display: "flex",
+flexDirection: "column",, alignItems: "center", gap: 10, margin: "18px 0 10px" }}>
       <div style={{ height: 1, flex: 1, background: "rgba(255,255,255,0.12)" }} />
       <div style={{ fontSize: 12, color: "rgba(255,255,255,0.68)", fontWeight: 800 }}>{label}</div>
       <div style={{ height: 1, flex: 1, background: "rgba(255,255,255,0.12)" }} />
@@ -1141,7 +1143,7 @@ export default function Home() {
               style={{
                 marginTop: 14,
                 display: "grid",
-                gridTemplateColumns: "1.4fr 1fr auto",
+                gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
                 gap: 10,
               }}
             >
@@ -1259,7 +1261,8 @@ export default function Home() {
                   <div style={{ fontSize: 14, fontWeight: 950 }}>{title}</div>
                   <div style={{ fontSize: 12, color: "rgba(255,255,255,0.72)", marginTop: 2 }}>{sub}</div>
 
-                  <div style={{ marginTop: 12, display: "flex", alignItems: "baseline", gap: 10 }}>
+                  <div style={{ marginTop: 12, display: "flex",
+flexDirection: "column", alignItems: "baseline", gap: 10 }}>
                     <div style={{ fontSize: 46, fontWeight: 950, lineHeight: 1, color: "white" }}>{v ?? "—"}</div>
                     <div style={{ fontSize: 12, color: "rgba(255,255,255,0.72)" }}>
                       {v ? oneLiner[v] ?? "" : "Nhập thông tin để xem"}
@@ -1304,7 +1307,7 @@ export default function Home() {
   style={{
     marginTop: 12,
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr), 1fr))",
     gap: 12,
   }}
 >
@@ -1436,9 +1439,9 @@ export default function Home() {
   style={{
     marginTop: 10,
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr), 1fr))",
     gap: 12,
-  }}
+  }
 >
           {(
             [
@@ -1614,7 +1617,6 @@ export default function Home() {
               Mở 1 chỉ số • {money(PRICE_SINGLE)}
             </button>
           </div>
-
           <div style={{ marginTop: 10, fontSize: 12, color: "rgba(255,255,255,0.70)" }}>
             *Bản demo: sau khi chuyển khoản, bấm “Tôi đã chuyển khoản” để mở khóa.
           </div>
