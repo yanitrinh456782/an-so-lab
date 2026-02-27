@@ -789,26 +789,19 @@ export default function Home() {
     setShowNudge(false);
     setToast("Đã mở khóa ✅");
   };
-
-  return (
-    <main
-      style={{
-        minHeight: "100vh",
-        padding: 18,
-        fontFamily:
-          'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"',
-        color: "white",
-        background:
-          "radial-gradient(1200px 520px at 20% 0%, rgba(124,92,255,0.45), transparent 60%), radial-gradient(900px 520px at 80% 10%, rgba(52,214,255,0.40), transparent 60%), linear-gradient(180deg, #070A1A, #060A14)",
-<main
-  style={{
-    minHeight: "100vh",
-    padding: 18,
-    overflowX: "hidden",
-    background:
-      "radial-gradient(1200px 520px at 20% 0%, rgba(124,92,255,0.45), transparent 60%), radial-gradient(900px 520px at 80% 10%, rgba(52,214,255,0.40), transparent 60%), linear-gradient(180deg, #070A1A, #060A14)",
-  }}
->
+return (
+  <main
+    style={{
+      minHeight: "100vh",
+      padding: 18,
+      overflowX: "hidden",
+      fontFamily:
+        'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"',
+      color: "white",
+      background:
+        "radial-gradient(1200px 520px at 20% 0%, rgba(124,92,255,0.45), transparent 60%), radial-gradient(900px 520px at 80% 10%, rgba(52,214,255,0.40), transparent 60%), linear-gradient(180deg, #070A1A, #060A14)",
+    }}
+  >
       {/* subtle grid */}
       <div
         style={{
